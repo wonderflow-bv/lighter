@@ -9,6 +9,16 @@ Highlight words in a HTML page with ease
 
 ## Usage
 
+## Examples
+
+If you run:
+
+```bash
+$ npm run examples
+```
+
+An [http-server](https://www.npmjs.com/package/http-server) instance will boot locally with some examples (look at source code)
+
 ## Author
 
 [Wonderflow](https://www.wonderflow.co)
