@@ -35,7 +35,7 @@
 <body>
   <div class="container">
     <div class="example">
-      <h1>Basic example</h1>
+      <h2>Basic example</h2>
       <p>Highlight of <code>dolor</code> word:</p>
 
       <pre class="code-block"><code>
@@ -48,7 +48,7 @@
     </div>
 
     <div class="example">
-      <h1>Multiple words</h1>
+      <h2>Multiple words</h2>
       <p>Highlight of <code>Redis</code> word:</p>
 
       <pre class="code-block"><code>
@@ -62,6 +62,27 @@
       geospatial indexes with radius queries and streams. Redis has built-in replication, Lua scripting, LRU eviction,
       transactions and different levels of on-disk persistence, and provides high availability via Redis Sentinel and
       automatic partitioning with Redis Cluster.</p>
+    </div>
+
+    <div class="example">
+      <h2>Words in N-levels nested elements</h2>
+      <p>Highlight of <code>stuff</code> word (see source HTML):</p>
+
+      <pre class="code-block"><code>
+        const lighter = require('..')
+
+        lighter({ node: document.querySelector('.container-with-nested-elements'), text: 'stuff' })
+      </code></pre>
+
+      <div class="container-with-nested-elements">
+        <p>1-level nested paragraph, with some stuff</p>
+        <div class="fake-container-2">
+          <p>2-levels nested paragraph, with some stuff</p>
+          <div class="fake-container-2">
+            <p>3-levels nested paragraph, with some <span style="text-decoration: underline">other stuff</span></p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
