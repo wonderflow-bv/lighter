@@ -3,7 +3,9 @@ lighter
 
 Highlight words in a HTML page with ease
 
-## Install
+![Example](/images/examples.png)
+
+## Install
 
 ## Usage
 
