@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "examples": "browserify examples/index.js > examples/bundle.js && http-server examples"
+    "examples": "browserify examples/index.js > examples/bundle.js && http-server examples",
+    "coverage": "nyc npm run test"
   },
   "devDependencies": {
     "ava": "^2.4.0",
     "browserify": "^16.5.0",
     "http-server": "^0.12.0",
-    "jsdom": "^15.2.1"
+    "jsdom": "^15.2.1",
+    "nyc": "^14.1.1"
   },
   "ava": {
     "verbose": true
