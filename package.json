@@ -1,0 +1,19 @@
+{
+  "name": "lighter",
+  "version": "1.0.0",
+  "description": "Highlight words in a HTML page with ease",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "examples": "browserify examples/index.js > examples/bundle.js && http-server examples"
+  },
+  "devDependencies": {
+    "ava": "^2.4.0",
+    "browserify": "^16.5.0",
+    "http-server": "^0.12.0",
+    "jsdom": "^15.2.1"
+  },
+  "ava": {
+    "verbose": true
+  }
+}
