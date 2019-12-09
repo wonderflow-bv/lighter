@@ -33,6 +33,16 @@ test('highlight "small" word wrapping it with <mark> element', t => {
   t.is(div.innerHTML, '<span>This module should be very <mark>small</mark></span>')
 })
 
+test('highlight "small" in nested elements', t => {
+  const div = document.createElement('div')
+  div.innerHTML = '<ul><li><div><p>This module should be very small</p></div></li></ul>'
+  document.body.appendChild(div)
+
+  lighter({ node: div, text: 'small' })
+
+  t.is(div.innerHTML, '<ul><li><div><p><span>This module should be very <mark>small</mark></span></p></div></li></ul>')
+})
+
 test('highlight "Redis" word in page specified selector', t => {
   const node = document.querySelector('div.title')
 
