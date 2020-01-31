@@ -1,5 +1,5 @@
 {
-  "name": "lighter",
+  "name": "@wonderflow/lighter",
   "version": "1.0.0",
   "description": "Highlight words in a HTML page with ease",
   "main": "index.js",
@@ -17,5 +17,11 @@
   },
   "ava": {
     "verbose": true
-  }
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wonderflow-bv/lighter.git"
+  },
+  "author": "Wonderflow <hello@wonderflow.co>"
 }
