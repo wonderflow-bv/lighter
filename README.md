@@ -1,13 +1,31 @@
-lighter
-===
+![Example](/images/lighter-logo.png)
 
-Highlight words in a HTML page with ease
+Highlight words in a HTML page with ease.
 
 ![Example](/images/examples.png)
 
 ## Install
 
-## Usage
+```bash
+$ npm install @wonderflow/lighter
+```
+
+## `lighter({ node, text })`
+
+The `lighter` function accepts two arguments:
+
+- `node` (required): a DOM node reference
+- `text` (required): the text you need to highlight
+
+```js
+const lighter = require('@wonderflow/lighter')
+
+lighter({ node: document.querySelector('.test'), text: 'dolor' })
+```
+
+## Bundling
+
+On local examples we're using [browserify](http://browserify.org/) to build the `bundle.js` file, but you can use any existing bundler with ease like [Webpack](https://webpack.js.org/) or [Parcel](https://parceljs.org/).
 
 ## Examples
 
