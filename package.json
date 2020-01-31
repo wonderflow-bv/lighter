@@ -6,7 +6,8 @@
   "scripts": {
     "test": "ava",
     "examples": "browserify examples/index.js > examples/bundle.js && http-server examples",
-    "coverage": "nyc npm run test"
+    "coverage": "nyc npm run test",
+    "publish": "npm publish --access public"
   },
   "devDependencies": {
     "ava": "^2.4.0",
